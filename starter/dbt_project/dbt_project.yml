@@ -1,0 +1,21 @@
+name: 'analytics_engineering_project'
+version: '1.0.0'
+config-version: 2
+
+# Must match a profile name in your ~/.dbt/profiles.yml -- see
+# ../../GETTING_STARTED.md for how to set that up (it's never committed
+# to this repo; that's where your real database credentials live).
+profile: 'analytics_engineering_project'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  analytics_engineering_project:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
