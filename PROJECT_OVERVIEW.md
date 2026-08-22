@@ -5,14 +5,15 @@
 Build a real, working, tested, and documented **dbt project** against
 your own **Module 3** PostgreSQL database (not a new domain — the same
 one you built and loaded data into then). A real staging layer that only
-cleans raw source tables; an intermediate/mart layer that answers real
-business questions from your own domain's Module 3 `SCENARIOS.md` entry
-(the ones you already answered once with ad-hoc SQL — now build the
-properly tested, documented, layered version); ≥3 dbt tests that would
-genuinely catch a realistic data break; one centrally-defined semantic
-metric; a real, measured `EXPLAIN ANALYZE` before/after query
-optimization; and a lineage-documented data dictionary generated via
-`dbt docs generate`.
+cleans raw source tables; real cross-table joins living in the
+**intermediate** layer, not just the marts; **at least two mart tables
+at two genuinely different grains** that answer real business questions
+from your own domain's Module 3 `SCENARIOS.md` entry (the ones you
+already answered once with ad-hoc SQL — now build the properly tested,
+documented, layered version); ≥3 dbt tests that would genuinely catch a
+realistic data break; one centrally-defined semantic metric; a real,
+measured `EXPLAIN ANALYZE` before/after query optimization; and a
+lineage-documented data dictionary generated via `dbt docs generate`.
 
 ## Why it matters
 
@@ -31,9 +32,12 @@ layered-modeling instinct.
 - A working `dbt project/` reconnected to your own Module 3 database.
 - Staging models that only clean (no joins, no business logic) — one per
   raw source table you actually use.
-- At least one intermediate model with real cross-table business logic.
-- At least one mart table, built at a clearly stated grain, answering a
-  real business question from your own domain.
+- At least one intermediate model with a real cross-table **join**, not
+  just an intermediate-layer aggregation — the mart layer should stay
+  thin on top of it.
+- At least two mart tables, at two genuinely different real grains, each
+  built at a clearly stated grain and answering a real business question
+  from your own domain.
 - `dbt run` and `dbt test` both completing successfully, ≥3 real tests —
   at least one demonstrated (in `required_components.md`) to genuinely
   fail when the data actually breaks.
@@ -49,8 +53,9 @@ layered-modeling instinct.
   and fixing a real bottleneck, at analyze/evaluate depth beyond Module
   3's own first pass.
 - **Data Modeling / Data Warehousing** — a real staging → intermediate →
-  mart layering, mart tables built for BI-tool consumption, not a mirror
-  of the OLTP schema.
+  mart layering, real joins at the intermediate layer, two mart tables at
+  two different grains built for BI-tool consumption, not a mirror of the
+  OLTP schema.
 - **Semantic Layer** — a metric defined once, centrally, reused instead
   of recalculated inconsistently.
 - **dbt** — a real project structure, real tests, real docs generation.
@@ -59,7 +64,7 @@ layered-modeling instinct.
 
 ## Timeline
 
-5 days. See `CHECKLIST_TIMELINE.md` for the day-by-day sprint pace and
+6 days. See `CHECKLIST_TIMELINE.md` for the day-by-day sprint pace and
 the full submission checklist.
 
 ## Where to start
