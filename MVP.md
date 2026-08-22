@@ -9,10 +9,15 @@ shared it — this is the same bar in checklist form.
 - [ ] `dbt run` and `dbt test` both complete successfully.
 - [ ] Real staging/intermediate/marts layering — staging models do
       **only** cleaning (rename/type-cast/null-handle); business logic
-      and joins live only in intermediate/mart models.
-- [ ] At least one mart table, built at a clearly stated grain,
-      answering a real business question from your own domain's Module 3
-      `SCENARIOS.md` entry.
+      and joins live only in intermediate/mart models. **At least one
+      real cross-table join lives in an intermediate model** — don't
+      push every join down into the mart layer; a mart should stay a
+      thin, business-ready select on top of already-joined intermediate
+      models where possible.
+- [ ] **At least two mart tables, at two genuinely different real
+      grains** (e.g. one entity-grain, one time-grain) — not two near-
+      duplicates of the same table. Each answers a real business
+      question from your own domain's Module 3 `SCENARIOS.md` entry.
 - [ ] **≥3 real `schema.yml` tests, all passing** — and at least one
       demonstrated (in `required_components.md`) to genuinely fail when
       you actually break the data on purpose, not just asserted to work.
@@ -32,8 +37,9 @@ shared it — this is the same bar in checklist form.
       before/after `EXPLAIN ANALYZE` output.
 - [ ] `starter/data_dictionary.md` — a real, filled-in index of your
       models and metric.
-- [ ] A real lineage trace: one mart column, followed back through every
-      intermediate model to its raw source column, written out.
+- [ ] A real lineage trace: one column from **each** of your two marts,
+      each followed back through every intermediate model to its raw
+      source column, written out.
 
 ## What "Below" looks like, concretely
 

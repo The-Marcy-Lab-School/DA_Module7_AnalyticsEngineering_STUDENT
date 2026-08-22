@@ -3,12 +3,15 @@
 Optional. Do these **after** MVP is genuinely solid — a shaky MVP with
 extra features isn't the goal. Pick 1-2, not all of them.
 
-## A second semantic metric, or a real time-based comparison
+## A real month-over-month percent-change query
 
-The given `models/metricflow_time_spine.sql` model supports real
-time-based metric queries (e.g. month-over-month) — build a second
-metric, or query your existing one with a real time grain/comparison,
-and show the real result.
+Your MVP's time-grain mart already gives you a real monthly trend — take
+it one step further: write a real query (against your mart, using the
+given `models/metricflow_time_spine.sql` if useful) that computes the
+real **percent change** month-over-month, not just the raw monthly
+numbers. Show the real result and call out which month had the largest
+real swing, and a real, specific guess at why (don't just report the
+number).
 
 ## A custom (singular) dbt test
 
