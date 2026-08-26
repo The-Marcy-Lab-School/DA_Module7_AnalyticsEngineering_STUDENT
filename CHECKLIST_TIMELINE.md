@@ -71,3 +71,14 @@ feel slow — that's real, expected setup cost, not you falling behind.
       two real traced lineage paths (one per mart).
 - [ ] `starter/required_components.md` and `starter/data_dictionary.md`
       filled in for real, not templated placeholders.
+- [ ] **Delete `PROJECT_OVERVIEW.md`** — it explains the assignment, not
+      your project; a real portfolio repo shouldn't have "here's what you
+      were asked to build" sitting in it.
+- [ ] **Replace `README.md`'s content with your own real project README**
+      — write it for someone who's never seen this assignment:
+  - **Business Problem** — the real business questions your marts answer.
+  - **Data Model Overview** — your staging/intermediate/marts layering,
+    the two grains.
+  - **Key Metrics** — your semantic metric, what it measures and why.
+  - **Testing & Data Quality Approach** — your real tests, the one that
+    genuinely fails on bad data.
