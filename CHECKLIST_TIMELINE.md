@@ -35,6 +35,11 @@ feel slow — that's real, expected setup cost, not you falling behind.
       business question — thin on top of your intermediate model(s).
 - [ ] Mart 2 built, at a **genuinely different grain** (e.g. time instead
       of entity), answering a second real business question.
+- [ ] Both marts are genuinely transformed/aggregated for analytics use —
+      not a 1:1 copy of a raw OLTP table with a new name.
+  > ⚠️ Common mistake: a "mart" that's really just `select * from
+  > stg_whatever` — a real mart is denormalized and built for BI-tool
+  > consumption, not a mirror of your Module 3 schema.
 - [ ] `dbt run` succeeds end-to-end.
 - [ ] ≥3 real tests total; **break one on purpose, watch it genuinely
       fail, fix it back** — document the real failure output in
