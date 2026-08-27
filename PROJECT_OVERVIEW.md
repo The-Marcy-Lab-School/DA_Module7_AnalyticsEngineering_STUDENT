@@ -3,17 +3,20 @@
 ## The objective
 
 Build a real, working, tested, and documented **dbt project** against
-your own **Module 3** PostgreSQL database (not a new domain — the same
-one you built and loaded data into then). A real staging layer that only
-cleans raw source tables; real cross-table joins living in the
-**intermediate** layer, not just the marts; **at least two mart tables
-at two genuinely different grains** that answer real business questions
-from your own domain's Module 3 `SCENARIOS.md` entry (the ones you
-already answered once with ad-hoc SQL — now build the properly tested,
-documented, layered version); ≥3 dbt tests that would genuinely catch a
-realistic data break; one centrally-defined semantic metric; a real,
-measured `EXPLAIN ANALYZE` before/after query optimization; and a
-lineage-documented data dictionary generated via `dbt docs generate`.
+your own **Module 3** PostgreSQL database — not a new domain, the same
+one you built and loaded data into then.
+
+A real staging layer that only cleans raw source tables. Real
+cross-table joins living in the **intermediate** layer, not just the
+marts. **At least two mart tables at two genuinely different grains**,
+each answering a real business question from your own domain's Module 3
+`SCENARIOS.md` entry — the ones you already answered once with ad-hoc
+SQL, now built as the properly tested, documented, layered version.
+
+≥3 dbt tests that would genuinely catch a realistic data break. One
+centrally-defined semantic metric. A real, measured `EXPLAIN ANALYZE`
+before/after query optimization. A lineage-documented data dictionary
+generated via `dbt docs generate`.
 
 ## Why it matters
 

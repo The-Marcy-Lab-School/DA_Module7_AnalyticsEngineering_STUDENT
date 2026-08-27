@@ -82,8 +82,8 @@ Also in `GETTING_STARTED.md` — the same database you built in Module 3
 sequenced checklist.
 
 **Where's the exact bar for "done," and what are the optional stretch
-goals?** This repo (your own copy) doesn't include `MVP.md` or
-`ABOVE_AND_BEYOND.md` on purpose — they're not something to keep sitting
+goals?** This repo (your own copy) doesn't include `MVP.md` (your **M**inimum **V**iable **P**roduct —
+the required baseline) or `ABOVE_AND_BEYOND.md` on purpose — they're not something to keep sitting
 in your portfolio repo. Ask your instructor for the link to this
 template's `project-scope` branch to read them, or check the checklist
 your instructor shares through the classroom, which covers the same
