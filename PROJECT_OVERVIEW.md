@@ -67,8 +67,9 @@ layered-modeling instinct.
 
 ## Timeline
 
-6 days. See `CHECKLIST_TIMELINE.md` for the day-by-day sprint pace and
-the full submission checklist.
+6 days, plus a required share-out session scheduled after. See
+`CHECKLIST_TIMELINE.md` for the day-by-day sprint pace and the full
+submission checklist.
 
 ## Where to start
 

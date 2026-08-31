@@ -3,7 +3,8 @@
 Start with `PROJECT_OVERVIEW.md` for what you're building and why. This
 file (`README.md`) is where the step-by-step setup lives.
 
-**Due:** 5 days, run as a sprint. See `CHECKLIST_TIMELINE.md` for the
+**Due:** 6 days, run as a sprint, plus a required share-out session
+scheduled after. See `CHECKLIST_TIMELINE.md` for the
 day-by-day pace and the full submission checklist.
 
 This repo is a **GitHub template** — a starting point, not something you
