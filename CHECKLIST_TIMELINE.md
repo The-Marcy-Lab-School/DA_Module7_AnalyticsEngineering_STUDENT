@@ -63,6 +63,15 @@ feel slow — that's real, expected setup cost, not you falling behind.
 - [ ] `starter/data_dictionary.md` filled in for real, both marts listed.
 - [ ] Commit and push.
 
+## Day 7 — Share-out
+
+Your instructor schedules this once every submission is in — usually a
+few days after Day 6, not necessarily the next calendar day. Real
+session, not optional: a live `dbt docs serve` walkthrough of your real
+lineage graph and mart grains, and a trade of real test failures across
+the group. Have your project runnable and `dbt docs serve` ready to go
+— see your instructor for the exact date.
+
 ## Submission checklist
 
 - [ ] `dbt run` and `dbt test` both complete successfully.
