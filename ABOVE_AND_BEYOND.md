@@ -29,7 +29,7 @@ quick inline comment is fine for a one-off exploratory model, but a
 model other analysts or a BI tool depend on needs real `schema.yml`
 tests and documented column descriptions — the same "when does informal
 stop being enough" call analysts make with formal data-governance
-artifacts (revisited for real in **Module 10**). Write a short case
+artifacts (revisited for real in **Module 11**). Write a short case
 (half a page) for **your specific project**: which of your models
 crossed that line, and which (if any) are still genuinely fine as
 informal/undocumented for now? Be concrete about your own project, not
