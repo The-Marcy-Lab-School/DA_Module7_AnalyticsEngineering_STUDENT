@@ -26,7 +26,7 @@ tests are a real, checkable claim about your data, not just a comment.
 Layering staging/intermediate/mart correctly, and being able to trace a
 mart column all the way back to its raw source, is exactly the skill
 that separates "a query that happens to work" from a real analytics-
-engineering deliverable a team can actually build on. **Module 9**
+engineering deliverable a team can actually build on. **Module 8**
 builds a real ETL/orchestration pipeline that assumes this same
 layered-modeling instinct.
 
