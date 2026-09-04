@@ -28,7 +28,7 @@ cd <your-repo-name>
 
 ### Step 3: Confirm your environment — the basics are already set up
 
-Like Module 3/6/7, `.gitignore`, `LICENSE`, and a real git history are
+Like Module 3/6, `.gitignore`, `LICENSE`, and a real git history are
 already here — git itself isn't being newly tested this module:
 
 ```bash
